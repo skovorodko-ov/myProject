@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__content _container">
+		<div class="header__logo">
+			<span class="header__logoLink">Repair Design Project</span>
+			<!-- <link rel="stylesheet" href="/" class="header__logoLink">Repair Design Project -->
+		</div>
+		<div class="header__nav">
+			<span class="header__navLink">Главная</span>
+			<span class="header__navLink">ПРоекты</span>
+			<span class="header__navLink">Замер</span>
+			<span class="header__navLink">Команда</span>
+			<span class="header__navLink">Отзывы</span>
+			<span class="header__navLink">Контакты</span>
+			<!-- <link rel="stylesheet" href="/" class="header__navLink">Главная
+			<link rel="stylesheet" href="/" class="header__navLink">ПРоекты
+			<link rel="stylesheet" href="/" class="header__navLink">Замер
+			<link rel="stylesheet" href="/" class="header__navLink">Команда
+			<link rel="stylesheet" href="/" class="header__navLink">Отзывы
+			<link rel="stylesheet" href="/" class="header__navLink">Контакты -->
+		</div>
+		<div class="header__phone">
+			<span class="header__phoneNumber">+7 (999) 768-32-99</span>
+		</div>
+		<button class="header__button">Заказать звонок</button>
+	</div>
+    </header>
+	<div class="modal">
+		<div class="modal__fon"></div>
+		<div class="modal__dialog">
+			<img class="modal__close" src="image\icon\x-circle.svg" alt="close">
+			<h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
+			<div class="modal__form form">
+				<div class="form__input">
+					<label class="form__label" for="userNameModal">Имя</label>
+					<input class="form__userInput" id="userNameModal" type="text">
+					<label class="form__label" for="userPhoneModal">Телефон</label>
+					<input class="form__userInput" id="userPhoneModal" type="tel">
+					<label class="form__label" for="userEmailModal">Email</label>
+					<input class="form__userInput" id="userEmailModal" type="email">
+				</div>
+				<div class="form__policity policity">
+					<input class="policity__input" id="userPolicityModal" type="checkBox">
+					<label class="policity__lable" for="userPolicityModal">Я соглашаюсь с обработкой данных</label>
+				</div>
+				<button class="form__button">Отправить заявку</button>
+			</div>
+		</div>
+	</div>
+    <section class="firstPage">
+		<div class="firstPage__social social">
+			<div class="social__box">
+				<div class="social__text">INSTAGRAM</div>
+				<div class="social__line"></div>
+			</div>
+		</div>
+		<div class="firstPage__fon">
+			<img class="firstPage__image" src="image\firstPageFon.jpg" alt="firstPageFon">
+			<div class="firstPage__black"></div>
+			<div class="firstPage__content content">
+				<h1 class="content__title">турецкий ремонт в 
+					<span class="content__title_yellow">Ростове-на-дону</span> 
+				</h1>
+				<p class="content__info">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
+				<div class="content__buttons">
+					<button class="content__buttons_gold">Рассчитать стоимость</button>
+					<button class="content__buttons_glass">Отправить заявку</button>
+				</div>
+			</div>
+		</div>
+    </section>
+	<section class="blocProject">
+		<div class="blocProject__content content">
+			<div class="content__text text">
+				<div class="text__title">
+					<span class="text__h2">Завершенные <br> проекты <div class="text__line"></div>
+					</span>
+					
+				</div>
+				<p class="text__p">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
+			</div>
+			<div class="blocProject__swiper">
+				<!-- Slider main container -->
+				<div class="swiper-container">
+				<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+					<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="slide">
+								<div class="slide__group">
+									<span class="slide__title">Город:</span>
+									<span class="slide__content">Ростов-на-Дону<br>ЖК Адмирал</span>
+								</div>
+								<div class="slide__group">
+									<span class="slide__title">Площадь:</span>
+									<span class="slide__content">81 м2</span>
+								</div>
+								<div class="slide__group">
+									<span class="slide__title">Срок ремонта:</span>
+									<span class="slide__content">3,5 месяца</span>
+								</div>
+								<div class="slide__group">
+									<span class="slide__title">Стоимость:</span>
+									<span class="slide__content">По запросу</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide">
+								<div class="slide__group">
+									<span class="slide__title">Город:</span>
+									<span class="slide__content">Москва<br>ЖК Адмирал</span>
+								</div>
+								<div class="slide__group">
+									<span class="slide__title">Площадь:</span>
+									<span class="slide__content">81 м2</span>
+								</div>
+								<div class="slide__group">
+									<span class="slide__title">Срок ремонта:</span>
+									<span class="slide__content">3,5 месяца</span>
+								</div>
+								<div class="slide__group">
+									<span class="slide__title">Стоимость:</span>
+									<span class="slide__content">По запросу</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide">
+								<div class="slide__group">
+									<span class="slide__title">Город:</span>
+									<span class="slide__content">Санкт-Петербург<br>ЖК Адмирал</span>
+								</div>
+								<div class="slide__group">
+									<span class="slide__title">Площадь:</span>
+									<span class="slide__content">81 м2</span>
+								</div>
+								<div class="slide__group">
+									<span class="slide__title">Срок ремонта:</span>
+									<span class="slide__content">3,5 месяца</span>
+								</div>
+								<div class="slide__group">
+									<span class="slide__title">Стоимость:</span>
+									<span class="slide__content">По запросу</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+				
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="blocProject__slideImage">
+			<!-- Slider main container -->
+			<div class="swiper-container swiperImage">
+				<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+					<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="slide__image">
+								<img class="swiper-slide__img" src="../image/slide1.jpg" alt="slide1">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide__image">
+								<img class="swiper-slide__img" src="../image/slide2.jpg" alt="slide2">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide__image">
+								<img class="swiper-slide__img" src="../image/slide3.jpg" alt="slide3">
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>				
+		
+		</div>
+	</section>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js\script.js"></script>
+</body>
+</html>
