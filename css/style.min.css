@@ -755,6 +755,146 @@ template {
   justify-content: center;
 }
 
+.blockVideo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -300px;
+}
+
+.blockVideo__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blockVideo__video {
+  width: 817px;
+  height: 434px;
+  background: #686666;
+  margin-top: 30px;
+}
+
+.blockVideo__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  width: 571px;
+}
+
+.title__h3 {
+  font-family: YesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.title__icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 115px;
+}
+
+.icon__line {
+  width: 32px;
+  height: 1.5px;
+  background: #E3B873;
+}
+
+.icon__image {
+  width: 33px;
+  height: 28px;
+  color: #E3B873;
+}
+
+.content__line {
+  width: 55px;
+  height: 1.5px;
+  background: #E3B873;
+}
+
+.content__text {
+  margin-top: 35px;
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #131313;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 770px;
+  margin-top: 60px;
+}
+
+.form__inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 45px;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__button {
+  background: #E3B873;
+  box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 2px;
+  width: 200px;
+  height: 51px;
+  font-family: FuturaDemiC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.form__policity {
+  margin-top: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input__lable {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.policity__label {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #131313;
+}
+
 @font-face {
   font-family: "futuraDemiC";
   src: url("../font/futurademic.ttf") format("truetype");
