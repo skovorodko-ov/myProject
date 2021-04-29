@@ -901,6 +901,35 @@ template {
   color: #131313;
 }
 
+.blockCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.blockCards__h3 {
+  font-family: YesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+  margin-top: 142px;
+}
+
+.blockCards__icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blockCards__cards {
+  display: flex;
+}
+
 @font-face {
   font-family: "futuraDemiC";
   src: url("../font/futurademic.ttf") format("truetype");
