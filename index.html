@@ -42,19 +42,21 @@
 			<img class="modal__close" src="image\icon\x-circle.svg" alt="close">
 			<h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
 			<div class="modal__form form">
-				<div class="form__input">
-					<label class="form__label" for="userNameModal">Имя</label>
-					<input class="form__userInput" id="userNameModal" type="text">
-					<label class="form__label" for="userPhoneModal">Телефон</label>
-					<input class="form__userInput" id="userPhoneModal" type="tel">
-					<label class="form__label" for="userEmailModal">Email</label>
-					<input class="form__userInput" id="userEmailModal" type="email">
-				</div>
-				<div class="form__policity policity">
-					<input class="policity__input" id="userPolicityModal" type="checkBox">
-					<label class="policity__lable" for="userPolicityModal">Я соглашаюсь с обработкой данных</label>
-				</div>
-				<button class="form__button">Отправить заявку</button>
+				<form action="send.php" method="POST" class="">
+					<div class="form__input">
+						<label class="form__label" for="userNameModal">Имя</label>
+						<input class="form__userInput" id="userNameModal" type="text">
+						<label class="form__label" for="userPhoneModal">Телефон</label>
+						<input class="form__userInput" id="userPhoneModal" type="tel">
+						<label class="form__label" for="userEmailModal">Email</label>
+						<input class="form__userInput" id="userEmailModal" type="email">
+					</div>
+					<div class="form__policity policity">
+						<input class="policity__input" id="userPolicityModal" type="checkBox">
+						<label class="policity__lable" for="userPolicityModal">Я соглашаюсь с обработкой данных</label>
+					</div>
+					<button class="form__button">Отправить заявку</button>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -211,7 +213,7 @@
 			<p class="content__text">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.</p>
 		</div>
 		<div class="blockVideo__form form">
-			<div class="form__inputs">
+			<form action="" class="form__inputs">
 				<div class="form__input input">
 					<label class="input__lable" for="userNameForm">Имя</label>
 					<input class="input__user" id="userNameForm" type="text">
@@ -221,11 +223,11 @@
 					<input class="input__user" id="userPhoneForm" type="tel">
 				</div>
 				<button class="form__button">Отправить</button>
-			</div>
-			<div class="form__policity policity">
-				<input class="policity__checkBox" type="checkBox" id="userPolicityForm">
-				<label class="policity__label" for="userPolicityForm">Я соглашаюсь с обработкой данных</label>
-			</div>
+				<div class="form__policity policity">
+					<input class="policity__checkBox" type="checkBox" id="userPolicityForm">
+					<label class="policity__label" for="userPolicityForm">Я соглашаюсь с обработкой данных</label>
+				</div>
+			</form>	
 		</div>
 	</section>
 
