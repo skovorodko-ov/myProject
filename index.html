@@ -45,11 +45,11 @@
 				<form action="send.php" method="POST" class="form__user">
 					<div class="form__input">
 						<label class="form__label" for="userNameModal">Имя</label>
-						<input class="form__userInput" id="userNameModal" type="text">
+						<input class="form__userInput" name="userNameModal" id="userNameModal" type="text">
 						<label class="form__label" for="userPhoneModal">Телефон</label>
-						<input class="form__userInput" id="userPhoneModal" type="tel">
+						<input class="form__userInput" name="userPhoneModal" id="userPhoneModal" type="tel">
 						<label class="form__label" for="userEmailModal">Email</label>
-						<input class="form__userInput" id="userEmailModal" type="email">
+						<input class="form__userInput" name="userEmailModal" id="userEmailModal" type="email">
 					</div>
 					<div class="form__policity policity">
 						<input class="policity__input" id="userPolicityModal" type="checkBox">
@@ -202,7 +202,7 @@
 		<div class="blockVideo__title title">
 			<h3 class="title__h3">онлайн контроль</h3>
 			<div class="title__icon icon">
-				<div class="icon__line"></div>
+				<div class="icon__line"></div>   <!--делать через псевдоэоементы-->
 				<img class="icon__image" src="../image/icon/iconVideo.svg" alt="iconVideo">
 				<div class="icon__line"></div>
 			</div>
@@ -244,7 +244,7 @@
 		<div class="blockCards__cards cards">
 			<div class="cards__card card">
 				<div class="card__images">
-					<img class="card__image" src="" alt="">
+					<img class="card__image" src="../image/imageCardOne.jpg" alt="imageCardOne">
 				</div>
 				<div class="card__content">
 					<span class="card__contentTitle">Косметический ремонт</span>
@@ -260,7 +260,7 @@
 			</div>
 			<div class="cards__card card">
 				<div class="card__images">
-					<img class="card__image" src="" alt="">
+					<img class="card__image" src="../image/imageCardTwo.jpg" alt="imageCardTwo">
 				</div>
 				<div class="card__content">
 					<span class="card__contentTitle">Косметический ремонт</span>
@@ -272,11 +272,11 @@
 					<li class="card__li">Замена розеток и выключателей</li>
 					<li class="card__li">Замена дверей</li>
 				</div>
-				<button class="card__button">от 900 руб / m2</button>
+				<button class="card__button">от 1800 руб / m2</button>
 			</div>
 			<div class="cards__card card">
 				<div class="card__images">
-					<img class="card__image" src="" alt="">
+					<img class="card__image" src="../image/imageCardThree.jpg" alt="imageCardThree">
 				</div>
 				<div class="card__content">
 					<span class="card__contentTitle">Косметический ремонт</span>
@@ -288,7 +288,39 @@
 					<li class="card__li">Замена розеток и выключателей</li>
 					<li class="card__li">Замена дверей</li>
 				</div>
-				<button class="card__button">от 900 руб / m2</button>
+				<button class="card__button">от 4000 руб / m2</button>
+			</div>
+		</div>
+	</section>
+	<section class="blockForm">
+		<div class="blockForm__circle"></div>
+		<div class="blockForm__forms forms">
+			<div class="forms__form">
+				<div class="modal__dialog">
+					<h3 class="modal__title">Оставьте заявку на бесплатный выезд замерщика</h3>
+					<div class="modal__form form">
+						<form action="send.php" method="POST" class="form__user">
+							<div class="form__input">
+								<label class="form__label" for="userNameModal">Имя</label>
+								<input class="form__userInput" name="userNameModal" id="userNameModal" type="text">
+								<label class="form__label" for="userPhoneModal">Телефон</label>
+								<input class="form__userInput" name="userPhoneModal" id="userPhoneModal" type="tel">
+								<label class="form__label" for="userEmailModal">Email</label>
+								<input class="form__userInput" name="userEmailModal" id="userEmailModal" type="email">
+							</div>
+							<div class="form__policity policity">
+								<input class="policity__input" id="userPolicityModal" type="checkBox">
+								<label class="policity__lable" for="userPolicityModal">Я соглашаюсь с обработкой данных</label>
+							</div>
+							<button class="form__button">Вызвать замерщика</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="forms__thisHelp thisHelp">
+				<img class="thisHelp__image" src="../image/CashPig.png" alt="CashPig">
+				<span class="thisHelp__span">Это поможет сэкономить 10 - 20% от стоимости материалов
+				</span>
 			</div>
 		</div>
 	</section>
