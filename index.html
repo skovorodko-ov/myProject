@@ -45,11 +45,11 @@
 				<form action="send.php" method="POST" class="form__user">
 					<div class="form__input">
 						<label class="form__label" for="userNameModal">Имя</label>
-						<input class="form__userInput" name="userNameModal" id="userNameModal" type="text">
+						<input class="form__userInput" name="userNameModal" id="userNameModal" type="text" placeholder="Как вас зовут:">
 						<label class="form__label" for="userPhoneModal">Телефон</label>
-						<input class="form__userInput" name="userPhoneModal" id="userPhoneModal" type="tel">
+						<input class="form__userInput" name="userPhoneModal" id="userPhoneModal" type="tel" placeholder="Ваш номер телефона:">
 						<label class="form__label" for="userEmailModal">Email</label>
-						<input class="form__userInput" name="userEmailModal" id="userEmailModal" type="email">
+						<input class="form__userInput" name="userEmailModal" id="userEmailModal" type="email" placeholder="Ваш email">
 					</div>
 					<div class="form__policity policity">
 						<input class="policity__input" id="userPolicityModal" type="checkBox">
@@ -212,19 +212,22 @@
 		</div>
 		<div class="blockVideo__content content">
 			<div class="content__line"></div>
-			<p class="content__text">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.</p>
+			<p class="content__textVideo">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.</p>
 		</div>
 		<div class="blockVideo__formSecond formSecond">
 			<form action="" class="formSecond__inputs">
-				<div class="formSecond__input input">
-					<label class="input__lable" for="userNameForm">Имя</label>
-					<input class="input__user" id="userNameForm" type="text">
+				<div class="formSecond__conteiner">
+					<div class="formSecond__input input">
+						<label class="input__lable" for="userNameForm">Имя</label>
+						<input class="input__user" name="userNameModal" id="userNameForm" type="text" placeholder="Как вас зовут:">
+					</div>
+					<div class="formSecond__input">
+						<label class="input__lable" for="userPhoneForm">Телефон</label>
+						<input class="input__user" name="userPhoneModal" id="userPhoneForm" type="tel" placeholder="Ваш номер телефона:">
+					</div>
+					<button class="formSecond__button">Отправить</button>
 				</div>
-				<div class="formSecond__input">
-					<label class="input__lable" for="userPhoneForm">Телефон</label>
-					<input class="input__user" id="userPhoneForm" type="tel">
-				</div>
-				<button class="formSecond__button">Отправить</button>
+				
 				<div class="formSecond__policity policity">
 					<input class="policity__checkBox" type="checkBox" id="userPolicityForm">
 					<label class="policity__label" for="userPolicityForm">Я соглашаюсь с обработкой данных</label>
@@ -293,7 +296,42 @@
 		</div>
 	</section>
 	<section class="blockForm">
-		<div class="blockForm__circle"></div>
+		<div class="blockForm__circle circle">
+			<div class="circle__lines"></div>
+			<div class="circle__content content">
+				<div class="point01">
+					<div class="content__point">
+						<span class="content__number">01</span>
+					</div>
+					<span class="content__textNumber">Наш специалист приедет для замеров в день контакта или назначит удобную для вас дату</span>
+				</div>
+			</div>
+			<div class="circle__content content">
+				<div class="point02">
+					<div class="content__point">
+						<span class="content__number">02</span>
+					</div>
+					<span class="content__textNumber">Бесплатный замер</span>
+				</div>
+			</div>
+			<div class="circle__content content">
+				<div class="point03">
+					<div class="content__point">
+						<span class="content__number">03</span>
+					</div>
+					<span class="content__textNumber">Бесплатная консультация</span>
+				</div>
+			</div>
+			<div class="circle__content content">
+				<div class="point04">
+					<div class="content__point">
+						<span class="content__number">04</span>
+					</div>
+					<span class="content__textNumber">Получите смету расходов и сроки вашего будущего ремонта
+					</span>
+				</div>
+			</div>
+		</div>
 		<div class="blockForm__forms forms">
 			<div class="forms__form">
 				<div class="modal__dialog">
@@ -301,16 +339,16 @@
 					<div class="modal__form form">
 						<form action="send.php" method="POST" class="form__user">
 							<div class="form__input">
-								<label class="form__label" for="userNameModal">Имя</label>
-								<input class="form__userInput" name="userNameModal" id="userNameModal" type="text">
-								<label class="form__label" for="userPhoneModal">Телефон</label>
-								<input class="form__userInput" name="userPhoneModal" id="userPhoneModal" type="tel">
-								<label class="form__label" for="userEmailModal">Email</label>
-								<input class="form__userInput" name="userEmailModal" id="userEmailModal" type="email">
+								<label class="form__label" for="userName">Имя</label>
+								<input class="form__userInput" name="userNameModal" id="userName" type="text" placeholder="Как вас зовут:">
+								<label class="form__label" for="userPhone">Телефон</label>
+								<input class="form__userInput" name="userPhoneModal" id="userPhone" type="tel" placeholder="Ваш телефон:">
+								<label class="form__label" for="userEmail">Email</label>
+								<input class="form__userInput" name="userEmailModal" id="userEmail" type="email" placeholder="Ваш email">
 							</div>
 							<div class="form__policity policity">
-								<input class="policity__input" id="userPolicityModal" type="checkBox">
-								<label class="policity__lable" for="userPolicityModal">Я соглашаюсь с обработкой данных</label>
+								<input class="policity__input" id="userPolicity" type="checkBox">
+								<label class="policity__lable" for="userPolicity">Я соглашаюсь с обработкой данных</label>
 							</div>
 							<button class="form__button">Вызвать замерщика</button>
 						</form>

@@ -35,7 +35,8 @@ try {
 
 //    прописать локайшен
     if ($mail->send()) {
-      echo "OK";  
+      // echo "OK";  
+      header('Location: index.html');
         } else {
       echo "Форма не отправлена, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
     }
