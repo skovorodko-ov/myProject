@@ -1362,6 +1362,58 @@ template {
 .blockOtherCards {
   display: flex;
   justify-content: center;
+  background: no-repeat center/100% url(../image/Group65.png) #131313;
+}
+
+.blockOtherCards__cards {
+  margin-top: -280px;
+}
+
+.blockOtherCards__cardOne {
+  height: 211px;
+}
+
+.blockOtherCards__cardTwo {
+  height: 286px;
+}
+
+.blockOtherCards__cardThree {
+  height: 414px;
+}
+
+.howWeWork {
+  height: 690px;
+  background: no-repeat center/100% url(../image/Group65.png) #131313;
+}
+
+.ourTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: no-repeat center/100% url(../image/Group65.png) #131313;
+}
+
+.ourTeam__title {
+  margin-top: 95px;
+  font-family: YesevaOne;
+  font-style: normal;
+  font-weight: normaL;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.ourTeam__p {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 448px;
 }
 
 @font-face {
