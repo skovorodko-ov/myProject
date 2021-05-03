@@ -1205,6 +1205,126 @@ template {
   width: 318px;
 }
 
+.fantasy {
+  width: 100%;
+  height: 750px;
+  background-image: url(../image/fantasyFon.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #131313;
+  margin-top: 150px;
+  position: relative;
+  display: flex;
+}
+
+.fantasy__fon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #131313;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.fantasy__title {
+  display: inline-block;
+  font-family: YesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #E3B873;
+  margin-left: 100px;
+  margin-top: 137px;
+  margin-bottom: 47px;
+  width: 500px;
+  margin-right: 150px;
+}
+
+.fantasy__left {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fantasy__container {
+  width: 269px;
+  height: 450px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fantasy__containerImg {
+  width: 751px;
+  height: 100%;
+  position: relative;
+  margin-right: 100px;
+}
+
+.container__content {
+  font-family: FuturaMediumC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 172.4%;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.highlight {
+  color: #E3B873;
+  text-decoration: underline;
+}
+
+.containerImg__slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.slide__img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 40px;
+  display: inline-block;
+  position: absolute;
+}
+
+.slideActive {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.img01 {
+  top: 0;
+  left: 0;
+  margin-top: -30px;
+}
+
+.img02 {
+  left: 0;
+  top: 490px;
+}
+
+.img03 {
+  top: 0;
+  left: 340px;
+  margin-top: -80px;
+}
+
+.img04 {
+  left: 340px;
+  top: 250px;
+}
+
 @font-face {
   font-family: "futuraDemiC";
   src: url("../font/futurademic.ttf") format("truetype");

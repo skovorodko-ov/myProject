@@ -50,4 +50,33 @@ window.addEventListener('DOMContentLoaded', function() {
         },
       
       });
+
+
+// слайдер блока fantazy
+   
+    let container = document.querySelector('.fantasy__container');
+    let slide = document.querySelector('.fantasy__containerImg');
+    let i;
+    let y = document.querySelectorAll('.container__content');
+    // let x = event.target;
+    y = Array.prototype.slice.call(y);
+    
+
+    container.addEventListener('click', function(event){
+        for(i = 0; i<container.children.length; i++){
+            container.children[i].classList.remove('highlight');
+
+            slide.children[i].classList.remove('slideActive');
+        };
+
+            event.target.classList.add('highlight');
+            let x = event.target;
+            console.log(x);
+            // console.log(.indexOf(3));
+            console.log(y.indexOf(x));
+            slide.children[y.indexOf(x)].classList.add('slideActive');
+        }
+        
+    );
+
 })
