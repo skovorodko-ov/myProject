@@ -1013,7 +1013,6 @@ template {
 
 .cards__card {
   width: 392px;
-  height: 608ps;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1323,6 +1322,46 @@ template {
 .img04 {
   left: 340px;
   top: 250px;
+}
+
+.blockText {
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  align-items: center;
+  height: 580px;
+}
+
+.blockText__title {
+  font-family: YesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+}
+
+.blockText__icon {
+  display: flex;
+  align-items: center;
+}
+
+.blockText__p {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
+  width: 741px;
+}
+
+.blockOtherCards {
+  display: flex;
+  justify-content: center;
 }
 
 @font-face {
