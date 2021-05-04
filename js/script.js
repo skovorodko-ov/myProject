@@ -79,4 +79,59 @@ window.addEventListener('DOMContentLoaded', function() {
         
     );
 
+
+    // свиппер howWeWork
+    const swiper1 = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+
+      });
+
+    // слайдер блок howWeWork
+
+    let clideActiv;
+    let slides = document.getElementsByClassName('control');
+    let conteinerImg = document.querySelector('.right__images');
+    let aim = document.querySelector('.howWeWork__slider');
+    let conteinerNum = document.querySelector('.right__numbers');
+
+    aim.addEventListener('click', function(){
+
+        console.log(slides);
+        let n = document.querySelectorAll('.swiper-slide-active')[2];
+        // console.log(n);
+        slides = Array.prototype.slice.call(slides);
+        // console.log(slides.indexOf(n));
+        if (slides.indexOf(n) === 0){
+            clideActiv = slides.length - 3;
+        } else if (slides.indexOf(n) === (slides.length-1)) {
+            clideActiv = 0;
+        } else {
+            clideActiv = slides.indexOf(n) - 1;
+        };
+        console.log(clideActiv);
+        for (i=0; i<conteinerImg.children.length; i++) {
+            conteinerImg.children[i].classList.remove('right__active');
+            conteinerNum.children[i].classList.remove('numbers__active');
+        };
+        conteinerImg.children[clideActiv].classList.add('right__active');
+        conteinerNum.children[clideActiv].classList.add('numbers__active');
+    });
+
+    
+    
+
 })

@@ -712,6 +712,18 @@ template {
   text-transform: uppercase;
 }
 
+.text__h2::after {
+  content: " ";
+  color: #FFFFFF;
+  width: 92px;
+  height: 1px;
+  background: #E3B873;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 17px;
+  position: absolute;
+}
+
 .text__line {
   width: 92px;
   height: 1px;
@@ -726,6 +738,10 @@ template {
   font-size: 18px;
   line-height: 29px;
   margin-bottom: 42px;
+}
+
+.swiper__project {
+  width: 35% !important;
 }
 
 .swiper-container {
@@ -763,10 +779,6 @@ template {
   color: #FFFFFF;
 }
 
-.swiper-pagination {
-  width: 50% !important;
-}
-
 .swiper-pagination-bullet {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 30px;
@@ -797,7 +809,7 @@ template {
 }
 
 .swiper-slide__img {
-  width: 100%;
+  width: 693px;
   height: 100%;
   flex-shrink: 0;
 }
@@ -809,9 +821,26 @@ template {
 
 .slide__image {
   height: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
+}
+
+.blocProject__slide {
+  width: 442px;
+  height: 290px;
+}
+
+.blocProject__conteiner {
+  height: 280px !important;
+}
+
+.blocProject__slideImg {
+  width: 693px;
+  height: 482px;
+}
+
+.blocProject__wrapper {
+  height: 482px !important;
 }
 
 .blockVideo {
@@ -1384,6 +1413,193 @@ template {
 .howWeWork {
   height: 690px;
   background: no-repeat center/100% url(../image/Group65.png) #131313;
+  display: flex;
+  justify-content: space-between;
+}
+
+.howWeWork__left {
+  width: 30%;
+  height: 100%;
+  margin-right: 100px;
+}
+
+.howWeWork__title {
+  padding-left: 100px;
+}
+
+.howWeWork__subtitle {
+  font-family: FuturaDemiC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.howWeWork__h3 {
+  font-family: YesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.howWeWork__h3::after {
+  content: " ";
+  color: #FFFFFF;
+  width: 92px;
+  height: 1px;
+  background: #E3B873;
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 17px;
+  position: absolute;
+}
+
+.howWeWork__slider {
+  margin-left: 100px;
+}
+
+.howWeWork__slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.howWeWork__slideSubtitle {
+  font-family: YesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.howWeWork__slideTitle {
+  font-family: YesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #E3B873;
+  display: inline-block;
+  width: 260px;
+  margin-top: 22px;
+  margin-bottom: 16px;
+}
+
+.howWeWork__slideText {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  display: inline-block;
+  width: 337px;
+  margin-top: 0;
+}
+
+.howWeWork__pagination {
+  width: 46% !important;
+  bottom: 17px !important;
+}
+
+.howWeWork__next {
+  left: 160px;
+}
+
+.swiper-container {
+  width: 450px;
+  height: 420px;
+}
+
+.right {
+  width: 60%;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right__numbers {
+  width: 100%;
+  height: 178px;
+  margin-top: 60px;
+  margin-bottom: 44px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.right__images {
+  width: 765px;
+  height: 377px;
+  position: relative;
+  overflow: hidden;
+}
+
+.right__img {
+  position: absolute;
+  width: 100%;
+  height: 376px;
+  left: 1100px;
+  opacity: 0;
+  transition: left 0.25s;
+}
+
+.right__active {
+  opacity: 1;
+  left: 0;
+}
+
+.numbers__number {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  margin-bottom: 30px;
+  opacity: 0.2;
+}
+
+.numbers__active {
+  opacity: 1;
+}
+
+.numbers__title {
+  font-family: YesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.numbers__title::after {
+  content: " ";
+  display: inline-block;
+  width: 16px;
+  height: 1px;
+  position: absolute;
+  background: #E3B873;
+  margin-left: -16px;
+  margin-top: 18px;
+}
+
+.numbers__text {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin-top: 17px;
+  display: inline-block;
+  width: 127px;
 }
 
 .ourTeam {
