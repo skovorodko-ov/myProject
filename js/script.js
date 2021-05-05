@@ -131,7 +131,39 @@ window.addEventListener('DOMContentLoaded', function() {
         conteinerNum.children[clideActiv].classList.add('numbers__active');
     });
 
-    
+    // анимация иконок
+
+    const animIcons = document.querySelectorAll('.icon__image');
+
+    if (animIcons.length > 0) {
+        window.addEventListener('scroll', animOnScrol);
+        function animOnScrol(){
+            for (let index = 0; index < animIcons.length; index++) {
+                const animIcon = animIcons[index];
+                const animIconHeight = animIcon.offsetHeight;
+                const animIconOffset = offset(animIcon).top;
+                const animStart = 1;
+
+                // let animIconPoint = window.innerHeight - animIconHeight / animStart;
+                let animIconPoint = window.innerHeight / 2;
+
+                if (animIconHeight > window.innerHeight){
+                    animIconPoint = window.innerHeight - window.innerHeight / animStart;
+                };
+
+                if ((pageYOffset > animIconOffset - animIconPoint) && pageYOffset < (animIconOffset + animIconHeight)){
+                    animIcon.classList.add('iconImg__activ');
+                } else {animIcon.classList.remove('iconImg__activ')};
+            };
+        };
+        function offset(el) {
+            const rect = el.getBoundingClientRect(),
+                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            return {top: rect.top + scrollTop, left: rect.left + scrollLeft };
+        };
+        animOnScrol();
+    }
     
 
 })
