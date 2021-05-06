@@ -9,7 +9,7 @@
         height: 485px
         background: $black
         margin-top: -242px
-        border: 1px solid red
+        // border: 1px solid red
         display: flex
         flex-direction: column
         align-items: center
@@ -30,6 +30,9 @@
         width: 520px
     &__hightStrok
         display: flex
+        justify-content: space-between
+        width: 520px
+        margin-top: 46px
     &__adres
         font-family: YesevaOne
         font-style: normal
@@ -57,6 +60,7 @@
     &__name
         display: flex
         flex-direction: column
+        width: 231px
 .formMap
     &__label
         font-family: FuturaBookC
@@ -65,3 +69,34 @@
         font-size: 15px
         line-height: 20px
         color: rgba(255, 255, 255, 0.5)
+    &__input
+        background: $black
+        border-width: 0
+        border-bottom: 1px solid rgb(133, 133, 133)
+        line-height: 1.6
+        font-family: FuturaMediumC
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 25px
+        color: $white
+    &__input:focus
+        background: $black
+        border-width: 0
+        border-bottom: 2px solid rgb(133, 133, 133)
+        font-family: FuturaMediumC
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 25px
+        color: $white
+    &__quation
+        display: flex
+        flex-direction: column
+        width: 100%
+        margin-top: 49px
+    &__policity
+        margin-top: 46px
+    &__btn
+        align-self: center
+        margin-top: 50px
