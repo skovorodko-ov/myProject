@@ -68,7 +68,7 @@
 			</div>
 		</div>
 		<div class="firstPage__fon">
-			<img class="firstPage__image" src="image\firstPageFon.jpg" alt="firstPageFon">
+			<!-- <img class="firstPage__image" src="image\firstPageFon.jpg" alt="firstPageFon"> -->
 			<div class="firstPage__black"></div>
 			<div class="firstPage__content content">
 				<h1 class="content__title">турецкий ремонт в 
@@ -714,21 +714,26 @@
 	<section class="formMap">
 		<div class="formMap__formBox">
 			<h3 class="formMap__h3">Остались вопросы?</h3>
-			<form class="formMap__form" action="">
+			<form class="formMap__form" action="send.php" method="POST">
 				<div class="formMap__hightStrok hightStrok">
 					<div class="hightStrok__name">
 						<label class="formMap__label" for="yourName">Имя</label>
-						<input class="formMap__input" id="yourName" type="text">
+						<input class="formMap__input" id="yourName" type="text" placeholder="Как вас зовут:">
 					</div>
 					<div class="hightStrok__name">
 						<label class="formMap__label" for="yourPhone">Телефон</label>
-						<input class="formMap__input" id="yourPhone" type="tel">
+						<input class="formMap__input" id="yourPhone" type="tel" placeholder="Ваш номер телефона:">
 					</div>
 				</div>
 				<div class="formMap__quation">
 					<label class="formMap__label" for="yourText">Вопрос</label>
-					<input class="formMap__input" id="yourText" type="text">
+					<input class="formMap__input" id="yourText" type="text" placeholder="Я хочу спросить:">
 				</div>
+				<div class="form__policity policity formMap__policity">
+					<input class="policity__input" id="userPolicityFormMap" type="checkBox">
+					<label class="policity__lable" for="userPolicityFormMap">Я соглашаюсь с обработкой данных</label>
+				</div>
+				<button class="form__button formMap__btn">Отправить</button>
 			</form>
 		</div>
 		<span class="formMap__adres">Ростов на дону, Торговый центр Plaza <br> Прямой телефон +7 (999) 768 32 99</span>
@@ -740,6 +745,25 @@
 			<div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростов‑на‑Дону</a><a href="https://yandex.by/maps/geo/rostov_na_donu/53166035/?ll=39.724076%2C47.221004&utm_medium=mapframe&utm_source=maps&z=12.84" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ростов-на-Дону — Яндекс.Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCU44Zr7~C" width="100%" height="465px" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
 		</div>
 	</section>
+	<footer class="footer">
+		<div class="footer__content _container">
+			<div class="footer__logo">
+				<span class="footer__logoLink">Repair Design Project</span>
+			</div>
+			<div class="footer__nav">
+				<span class="footer__navLink">Главная</span>
+				<span class="footer__navLink">ПРоекты</span>
+				<span class="footer__navLink">Замер</span>
+				<span class="footer__navLink">Команда</span>
+				<span class="footer__navLink">Отзывы</span>
+				<span class="footer__navLink">Контакты</span>
+			</div>
+			<div class="footer__phone">
+				<span class="footer__phoneNumber">+7 (999) 768-32-99</span>
+			</div>
+			<button class="footer__button">Заказать звонок</button>
+		</div>
+	</footer>
 
 	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

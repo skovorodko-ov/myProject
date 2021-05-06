@@ -412,6 +412,10 @@ template {
   position: relative;
   display: flex;
   align-items: center;
+  background: center no-repeat url("../image/firstPageFon.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 650px;
 }
 
 .firstPage__image {
@@ -741,7 +745,7 @@ template {
 }
 
 .swiper__project {
-  width: 35% !important;
+  width: 46% !important;
 }
 
 .swiper-container {
@@ -815,7 +819,7 @@ template {
 }
 
 .swiperImage {
-  width: 693px;
+  width: 693px !important;
   height: 482px;
 }
 
@@ -1119,7 +1123,7 @@ template {
 
 .blockForm__circle {
   width: 50%;
-  background-image: url("../image/blockFormsFon.png");
+  background-image: url("../image/blockFormBG.png");
   background-position: 0 -100px;
   background-repeat: no-repeat;
   position: relative;
@@ -1138,24 +1142,24 @@ template {
   top: 35%;
   display: flex;
   align-items: center;
-  padding-left: 570px;
+  padding-left: 730px;
   transform-origin: 30%;
 }
 
 .circle__content:nth-child(2) {
-  transform: rotate(-45deg);
+  transform: rotate(-37deg);
 }
 
 .circle__content:nth-child(3) {
-  transform: rotate(-15deg);
+  transform: rotate(-16deg);
 }
 
 .circle__content:nth-child(4) {
-  transform: rotate(15deg);
+  transform: rotate(10deg);
 }
 
 .circle__content:nth-child(5) {
-  transform: rotate(45deg);
+  transform: rotate(37deg);
 }
 
 .content__point {
@@ -1193,7 +1197,7 @@ template {
 
 .point01 {
   transform-origin: 0 0;
-  transform: rotate(45deg);
+  transform: rotate(37deg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1201,21 +1205,21 @@ template {
 
 .point02 {
   transform-origin: 0 0;
-  transform: rotate(15deg);
+  transform: rotate(16deg);
   display: flex;
   align-items: center;
 }
 
 .point03 {
   transform-origin: 0 0;
-  transform: rotate(-15deg);
+  transform: rotate(-10deg);
   display: flex;
   align-items: center;
 }
 
 .point04 {
   transform-origin: 0 0;
-  transform: rotate(-45deg);
+  transform: rotate(-37deg);
   display: flex;
   align-items: center;
 }
@@ -1901,7 +1905,6 @@ template {
   height: 485px;
   background: #131313;
   margin-top: -242px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1928,6 +1931,9 @@ template {
 
 .formMap__hightStrok {
   display: flex;
+  justify-content: space-between;
+  width: 520px;
+  margin-top: 46px;
 }
 
 .formMap__adres {
@@ -1961,6 +1967,7 @@ template {
 .hightStrok__name {
   display: flex;
   flex-direction: column;
+  width: 231px;
 }
 
 .formMap__label {
@@ -1970,6 +1977,111 @@ template {
   font-size: 15px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.formMap__input {
+  background: #131313;
+  border-width: 0;
+  border-bottom: 1px solid #858585;
+  line-height: 1.6;
+  font-family: FuturaMediumC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.formMap__input:focus {
+  background: #131313;
+  border-width: 0;
+  border-bottom: 2px solid #858585;
+  font-family: FuturaMediumC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.formMap__quation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 49px;
+}
+
+.formMap__policity {
+  margin-top: 46px;
+}
+
+.formMap__btn {
+  align-self: center;
+  margin-top: 50px;
+}
+
+.footer {
+  z-index: 500;
+  top: 0;
+  width: 100%;
+  background-color: #131313;
+  display: flex;
+  justify-content: center;
+}
+
+.footer * {
+  display: inline-block;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 22px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.footer__logoLink {
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #E3B873;
+  cursor: pointer;
+}
+
+.footer__navLink {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.footer__phoneNumber {
+  color: #E3B873;
+  font-family: FuturaDemiC;
+  font-style: normal;
+  font-size: 14px;
+  text-decoration-line: underline;
+}
+
+.footer__button {
+  background-color: #E3B873;
+  font-family: FuturaDemiC;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  width: 161px;
+  height: 37px;
+  cursor: pointer;
 }
 
 @font-face {

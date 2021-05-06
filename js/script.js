@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const modalFon = document.querySelector('.modal__fon');
     const contentButtonsGold = document.querySelector('.content__buttons_gold');
     const contentButtonsGlass = document.querySelector('.content__buttons_glass');
+    const footerButton = document.querySelector('.footer__button');
 
 
     headerButton.addEventListener('click', function() {
@@ -22,6 +23,9 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     modalFon.addEventListener('click', function() {
         modal.classList.remove('modal--visible');
+    });
+    footerButton.addEventListener('click', function() {
+        modal.classList.add('modal--visible');
     });
     window.addEventListener('keyup', function(event) {
         if (event.keyCode === 27) {
