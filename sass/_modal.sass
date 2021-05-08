@@ -42,6 +42,8 @@
         color: #FFFFFF
     &__form
         flex-grow: 1
+.form *
+    outline: none
 .form
     display: flex
     flex-direction: column
@@ -75,6 +77,8 @@
         font-size: 18px
         line-height: 25px
         color: $white
+    &__userInput:focus
+        box-shadow: 0 0 10px $white
     &__userInput:focus
         background: $black
         border-width: 0

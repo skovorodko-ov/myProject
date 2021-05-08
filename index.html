@@ -13,22 +13,15 @@
     <header class="header">
         <div class="header__content _container">
 		<div class="header__logo">
-			<span class="header__logoLink">Repair Design Project</span>
-			<!-- <link rel="stylesheet" href="/" class="header__logoLink">Repair Design Project -->
+			<a href="/" class="header__logoLink">Repair Design Project</a>
 		</div>
 		<div class="header__nav">
-			<span class="header__navLink">Главная</span>
-			<span class="header__navLink">ПРоекты</span>
-			<span class="header__navLink">Замер</span>
-			<span class="header__navLink">Команда</span>
-			<span class="header__navLink">Отзывы</span>
-			<span class="header__navLink">Контакты</span>
-			<!-- <link rel="stylesheet" href="/" class="header__navLink">Главная
-			<link rel="stylesheet" href="/" class="header__navLink">ПРоекты
-			<link rel="stylesheet" href="/" class="header__navLink">Замер
-			<link rel="stylesheet" href="/" class="header__navLink">Команда
-			<link rel="stylesheet" href="/" class="header__navLink">Отзывы
-			<link rel="stylesheet" href="/" class="header__navLink">Контакты -->
+			<a href="/" class="header__navLink">Главная</a>
+			<a href="#project" class="header__navLink">ПРоекты</a>
+			<a href="#zamer" class="header__navLink">Замер</a>
+			<a href="#team" class="header__navLink">Команда</a>
+			<a href="#opinions" class="header__navLink">Отзывы</a>
+			<a href="#contakts" class="header__navLink">Контакты</a>
 		</div>
 		<div class="header__phone">
 			<span class="header__phoneNumber">+7 (999) 768-32-99</span>
@@ -82,7 +75,7 @@
 			</div>
 		</div>
     </section>
-	<section class="blocProject">
+	<section class="blocProject" id="project">
 		<div class="blocProject__content content">
 			<div class="content__text text">
 				<div class="text__title">
@@ -213,7 +206,7 @@
 			<p class="content__textVideo">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.</p>
 		</div>
 		<div class="blockVideo__formSecond formSecond">
-			<form action="" class="formSecond__inputs">
+			<form action="send.php" method="POST" class="formSecond__inputs">
 				<div class="formSecond__conteiner">
 					<div class="formSecond__input input">
 						<label class="input__lable" for="userNameForm">Имя</label>
@@ -227,8 +220,8 @@
 				</div>
 				
 				<div class="formSecond__policity policity">
-					<input class="policity__checkBox" type="checkBox" id="userPolicityForm">
-					<label class="policity__label" for="userPolicityForm">Я соглашаюсь с обработкой данных</label>
+					<input class="policity__checkBox" type="checkBox" id="userPolicityFormVideo">
+					<label class="policity__label" for="userPolicityFormVideo">Я соглашаюсь с обработкой данных</label>
 				</div>
 			</form>	
 		</div>
@@ -293,7 +286,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="blockForm">
+	<section class="blockForm" id="zamer">
 		<div class="blockForm__circle circle">
 			<div class="circle__lines"></div>
 			<div class="circle__content content">
@@ -594,7 +587,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="ourTeam">
+	<section class="ourTeam" id="team">
 		<h3 class="ourTeam__title">Наша команда</h3>
 		<div class="blockText__icon icon">
 			<div class="icon__line"></div>
@@ -648,7 +641,7 @@
 		<div class="team__line"></div>
 		<p class="team__content">Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет  гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.</p>
 	</section>
-	<section class="clients">
+	<section class="clients" id="opinions">
 		<h3 class="clients__h3">Наши клиенты</h3>
 		<div class="clients__icon icon">
 			<div class="icon__line"></div>
@@ -711,7 +704,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="formMap">
+	<section class="formMap" id="contakts">
 		<div class="formMap__formBox">
 			<h3 class="formMap__h3">Остались вопросы?</h3>
 			<form class="formMap__form" action="send.php" method="POST">
@@ -742,7 +735,7 @@
 			<img class="formMap__icon" src="../image/icon/socialInst.png" alt="icon">
 		</div>
 		<div class="formMap__map">
-			<div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростов‑на‑Дону</a><a href="https://yandex.by/maps/geo/rostov_na_donu/53166035/?ll=39.724076%2C47.221004&utm_medium=mapframe&utm_source=maps&z=12.84" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ростов-на-Дону — Яндекс.Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCU44Zr7~C" width="100%" height="465px" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae451b88e59534acc42723a91bd3a9822888f5cab4736665e1b538cba42bc21de&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
 		</div>
 	</section>
 	<footer class="footer">

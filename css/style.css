@@ -363,6 +363,7 @@ template {
 }
 
 .header__logoLink {
+  text-decoration: none;
   font-family: FuturaDemiC;
   font-size: 14px;
   font-style: normal;
@@ -372,6 +373,7 @@ template {
 }
 
 .header__navLink {
+  text-decoration: none;
   font-family: FuturaBookC;
   font-style: normal;
   font-size: 14px;
@@ -594,6 +596,10 @@ template {
   flex-grow: 1;
 }
 
+.form * {
+  outline: none;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -634,6 +640,10 @@ template {
   font-size: 18px;
   line-height: 25px;
   color: #FFFFFF;
+}
+
+.form__userInput:focus {
+  box-shadow: 0 0 10px #FFFFFF;
 }
 
 .form__userInput:focus {
@@ -942,6 +952,10 @@ template {
   margin-top: 60px;
 }
 
+.formSecond__inputs * {
+  outline: none;
+}
+
 .formSecond__inputs {
   display: flex;
   flex-direction: column;
@@ -1006,6 +1020,10 @@ template {
   font-size: 18px;
   line-height: 24px;
   color: #363636;
+}
+
+.input__user:focus {
+  box-shadow: 0 0 10px #131313;
 }
 
 .policity__label {
@@ -1922,6 +1940,10 @@ template {
   margin-top: 34px;
 }
 
+.formMap__form * {
+  outline: none;
+}
+
 .formMap__form {
   display: flex;
   flex-direction: column;
@@ -2002,6 +2024,7 @@ template {
   font-size: 18px;
   line-height: 25px;
   color: #FFFFFF;
+  box-shadow: 0 0 10px #FFFFFF;
 }
 
 .formMap__quation {

@@ -67,6 +67,7 @@
         line-height: 34px
         text-align: center
         color: $black
+
 .formSecond
     display: flex
     justify-content: center
@@ -74,6 +75,8 @@
     align-items: center
     width: 100%
     margin-top: 60px
+    &__inputs *
+        outline: none
     &__inputs
         display: flex
         flex-direction: column
@@ -127,6 +130,8 @@
         font-size: 18px
         line-height: 24px
         color: #363636
+    &__user:focus
+        box-shadow: 0 0 10px $black
 
 .policity
     &__checkBox
